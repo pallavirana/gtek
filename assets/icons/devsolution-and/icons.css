@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "devsolution-and";
+  src:url("fonts/devsolution-and.eot");
+  src:url("fonts/devsolution-and.eot?#iefix") format("embedded-opentype"),
+    url("fonts/devsolution-and.woff") format("woff"),
+    url("fonts/devsolution-and.ttf") format("truetype"),
+    url("fonts/devsolution-and.svg#devsolution-and") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "devsolution-and" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="dev-"]:before,
+[class*=" dev-"]:before {
+  font-family: "devsolution-and" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dev-1:before {
+  content: "a";
+}
+.dev-2:before {
+  content: "b";
+}
+.dev-4:before {
+  content: "c";
+}
+.dev-6:before {
+  content: "d";
+}
+.dev-3:before {
+  content: "e";
+}
+.dev-5:before {
+  content: "f";
+}
+.dev-8:before {
+  content: "g";
+}
+.dev-7:before {
+  content: "h";
+}
+.dev-9:before {
+  content: "i";
+}
+.dev-10:before {
+  content: "j";
+}
+.dev-11:before {
+  content: "k";
+}
+.dev-12:before {
+  content: "l";
+}
+.dev-13:before {
+  content: "m";
+}
+.dev-26:before {
+  content: "n";
+}
+.dev-25:before {
+  content: "o";
+}
+.dev-24:before {
+  content: "p";
+}
+.dev-23:before {
+  content: "q";
+}
+.dev-34:before {
+  content: "r";
+}
+.dev-33:before {
+  content: "s";
+}
+.dev-32:before {
+  content: "t";
+}
+.dev-31:before {
+  content: "u";
+}
+.dev-30:before {
+  content: "v";
+}
+.dev-29:before {
+  content: "w";
+}
+.dev-21:before {
+  content: "y";
+}
+.dev-20:before {
+  content: "z";
+}
+.dev-19:before {
+  content: "A";
+}
+.dev-18:before {
+  content: "B";
+}
+.dev-17:before {
+  content: "C";
+}
+.dev-16:before {
+  content: "D";
+}
+.dev-15:before {
+  content: "E";
+}
+.dev-14:before {
+  content: "F";
+}
+.dev-28:before {
+  content: "H";
+}

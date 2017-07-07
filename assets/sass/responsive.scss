@@ -1,0 +1,492 @@
+@import "compass/css3";
+// Responsive Layouts
+@import "_media-queries";
+@import "_functions";
+@import "_mixins";
+
+
+@include max-screen(1200px){
+	.site-container{
+		.site-wrapper{
+			// Single Project
+			.single-project{
+				.gallery-project{
+					.project-slider{
+
+						.owl-controls{
+							.owl-buttons{
+
+								> div{
+									display: none !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include max-screen(991px){
+		.top-bar{
+			p{
+				text-align: center;
+			}
+
+			.top-social{
+				margin: 0 auto;
+  				display: table;
+				float: none !important;
+			}
+		}
+
+		.revolution-slider{
+			top: 0 !important;
+		}
+
+		.site-wrapper{
+			margin-top: 0 !important;
+
+			//Single Toolbar
+			.toolbar-single{
+				margin-left: 0 !important;
+				margin-top: -70px !important;
+				width: 100% !important;
+			}
+
+			// Seperated Background
+			.seperated-background{
+				width: 100%;
+				.skills{
+					float: none !important;
+					width: 100% !important;
+				}
+				.skill-bg{
+					float: none !important;
+					width: 100% !important;
+	
+				}
+			}
+
+			// Portfolio
+			.fullwidthport{
+				> .items{
+					> li{
+						width: 50% !important;
+					}
+				}
+
+				.portfolio-two{
+					li{
+						&.item{
+							width: 48% !important;
+						}
+					}
+				}
+
+				.portfolio-three{
+					li{
+						&.item{
+							width: 48% !important;
+						}
+						&.item-min{
+							width: 48% !important;
+						}
+						&.item-larg{
+							width: 48% !important;
+						}
+					}
+				}
+
+			}
+
+			// Contact Us
+			.contact-us{
+
+				.top-form{
+					padding: 40px 0 !important;
+
+					.form-inner{
+						float: left;
+						width: 50%;
+
+
+						h2{
+							margin-bottom: 20px !important;
+						}
+
+						.form-group{
+							margin-bottom: 5px !important;
+						}
+
+						textarea,
+						input{
+							
+						}
+
+						button[type="submit"]{
+							margin-top: 10px !important;
+						}
+					}
+				}
+			}
+
+		}
+}
+
+@include max-screen(767px){
+	.site-container{
+		header{
+			.bottom-bar{
+
+				.navbar{
+					// Navigation
+					.navbar-collapse{
+						nav{
+							ul{
+								li{
+									float: none;
+									width: 100%;
+									a{
+										padding: 15px 30px !important;
+
+										&:after{
+											display: none !important;
+										}
+
+										&:hover{
+										}
+
+										&.active{
+										}
+									}
+
+									&.search{
+										display: none;
+										visibility: hidden;
+									}
+
+									> ul.drop-down{
+										position: static !important;
+									  	width: 100% !important;
+									  	background-color: #FFF !important;
+									  	padding: 0 !important;
+
+									  	visibility: visible !important;
+										opacity: 1 !important;
+										border: none !important;
+										-webkit-transform: rotateX(0deg) !important; 
+										-moz-transform: rotateX(0deg) !important; 
+										-ms-transform: rotateX(0deg) !important; 
+										-o-transform: rotateX(0deg) !important; 
+										transform: rotateX(0deg) !important;
+
+										li{
+											background-color: #FFF !important;
+											a{
+												background-color: #FFF !important;
+												font-size: 12px !important;
+
+												&:hover{
+													color: #55c8ff !important;
+												} 
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+
+					&.active-search{
+						.navbar-collapse{
+							visibility: visible !important;
+						}
+						.navbar-header{
+							visibility: visible !important;
+						}
+
+						#top-search{
+							display: none !important;
+							visibility: hidden !important;
+						}
+					}
+				}
+			}
+		}
+
+		.heading{
+				  display: table !important;
+				  position: relative !important;
+				  padding-left: 50px !important;
+				  padding-right: 50px !important;
+				  font-family: "Montserrat", sans-serif !important;
+				  font-size: 20px !important;
+				  font-weight: 700 !important;
+				  color: #000 !important;
+				  text-transform: uppercase !important;
+				  margin-bottom: 30px !important;
+
+				
+					&:before{
+					  content: "\e605";
+					  font-family: 'devsolution';
+					  font-size: 50px !important;
+					  speak: none !important;
+					  font-style: normal;
+					  font-weight: normal;
+					  font-variant: normal;
+					  text-transform: none;
+					  line-height: 1 !important;
+					  color: #27b1d2;
+					  -webkit-font-smoothing: antialiased;
+					  -moz-osx-font-smoothing: grayscale;
+					  position: absolute;
+					  top: -15px !important;
+					  left: 0px !important;
+					  z-index: 2 !important;
+					}
+
+					&:after{
+					content: "";
+					  display: block;
+					  position: absolute;
+					  right: 0 !important;
+					  left: 40px !important;
+					  height: 2px !important;
+					  margin-top: 10px !important;
+					  background-color: #27b1d2;
+					  z-index: 1 !important;
+					}
+			}
+	}
+}
+
+@include max-screen(640px){
+	.site-container{
+		.site-wrapper{
+			.about-author{
+				.author-content{
+					float: left !important;
+ 					width: 50% !important;
+
+					.author-title{
+						margin-bottom: 25px !important;
+  						margin-top: 40px !important;
+						span{
+
+						}
+					}
+					.author-desc{
+						font-size: 17px !important;
+						line-height: 27px !important;
+					}
+					.author-link{
+						font-size: 10px;
+						padding: 10px 15px !important;
+						margin-right: 5px !important;
+						margin-top: 35px !important;
+						margin-bottom: 20px !important;
+					}
+				}
+				.author-attachment{
+					position: absolute !important;
+					bottom: 0 !important;
+					right: 0 !important;
+					width: 50% !important;
+				}
+			}
+
+			// Global Dentist Titles
+			.heading{
+				  display: table !important;
+				  position: relative !important;
+				  padding-left: 50px !important;
+				  padding-right: 50px !important;
+				  font-family: "Montserrat", sans-serif !important;
+				  font-size: 20px !important;
+				  font-weight: 700 !important;
+				  color: #000 !important;
+				  text-transform: uppercase !important;
+				  margin-bottom: 30px !important;
+
+				
+					&:before{
+					  content: "\e605";
+					  font-family: 'devsolution';
+					  font-size: 50px !important;
+					  speak: none !important;
+					  font-style: normal;
+					  font-weight: normal;
+					  font-variant: normal;
+					  text-transform: none;
+					  line-height: 1 !important;
+					  color: #27b1d2;
+					  -webkit-font-smoothing: antialiased;
+					  -moz-osx-font-smoothing: grayscale;
+					  position: absolute;
+					  top: -15px !important;
+					  left: 0px !important;
+					  z-index: 2 !important;
+					}
+
+					&:after{
+					content: "";
+					  display: block;
+					  position: absolute;
+					  right: 0 !important;
+					  left: 40px !important;
+					  height: 2px !important;
+					  margin-top: 10px !important;
+					  background-color: #27b1d2;
+					  z-index: 1 !important;
+					}
+			}
+
+			// Portfolio
+			.fullwidthport{
+				> .items{
+					> li{
+						width: 100% !important;
+					}
+				}
+
+				.portfolio-two{
+					li{
+						&.item{
+							width: 100% !important;
+							margin: 0 !important;
+						}
+					}
+				}
+
+				.portfolio-three{
+					li{
+						&.item{
+							width: 100% !important;
+							margin: 0 !important;
+						}
+						&.item-larg{
+							width: 100% !important;
+							margin: 0 !important;
+						}
+						&.item-min{
+							width: 100% !important;
+							margin: 0 !important;
+						}
+					}
+				}
+			}
+
+			// Promotion
+			.promotion{
+				padding: 20px 0 !important;
+				min-height: 0 !important;
+				.left{
+					width: 70% !important;
+					padding: 0 0px 0 10px !important;
+					margin-top: 20px !important;
+
+					h2{
+						font-size: 11px !important;
+						line-height: 15px !important;
+
+						padding-left: 90px !important;
+						margin-bottom: 10px !important;
+
+						span{
+							font-size: 80px !important;
+							line-height: 0 !important;
+							top: 7px !important;
+						}
+					}
+
+					p{
+						font-size: 12px !important;
+						line-height: 18px !important;
+					}
+
+					.dev-btn{
+						float: none !important;
+						display: inline-block !important;
+						margin-right: 15px !important;
+						width: 100px !important;
+						height: 30px !important;
+						margin-top: 10px !important;
+
+						&.appstore{
+							background: url(../../demo/appstore-btn.png) no-repeat center !important;
+							@include background-size(cover !important);
+						}
+						&.googleplay{
+							background: url(../../demo/googleplay-btn.png) no-repeat center !important;
+							@include background-size(cover !important);
+						}
+					}
+				}
+				.right{
+					float: right;
+					width: 30%;
+					a{
+						bottom: -3px !important;
+						margin-left: 10px !important;
+
+						img{
+							width: 100% !important;
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+
+@include max-screen(530px){
+	.site-container{
+		.site-wrapper{
+			// About Author
+			.about-author{
+
+
+				.author-content{
+
+					
+					.author-title{
+						margin-bottom: 15px !important;
+
+						span{
+						
+
+						}
+					}
+					.author-desc{
+						font-size: 14px !important;
+    					line-height: 18px !important;
+					}
+
+					.author-link{
+						font-size: 12px !important;
+						margin:10px 0 20px !important;
+						padding: 7px 9px !important;
+
+						&:hover{
+							
+						}
+					}
+				}
+
+				.author-attachment{
+					
+					.author-image{
+						
+		  				img{
+		  					
+		  				}
+					}
+				}
+			}
+		}
+	}
+}

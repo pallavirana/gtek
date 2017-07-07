@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'devsolution';
+	src:url('fonts/devsolution.eot?hs8xgd');
+	src:url('fonts/devsolution.eot?#iefixhs8xgd') format('embedded-opentype'),
+		url('fonts/devsolution.woff?hs8xgd') format('woff'),
+		url('fonts/devsolution.ttf?hs8xgd') format('truetype'),
+		url('fonts/devsolution.svg?hs8xgd#devsolution') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.dev {
+	font-family: 'devsolution';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.dev-1:before {
+	content: "\e605";
+}
+
+.dev-2:before {
+	content: "\e604";
+}
+
+.dev-3:before {
+	content: "\e600";
+}
+
+.dev-4:before {
+	content: "\e601";
+}
+
+.dev-5:before {
+	content: "\e602";
+}
+
+.dev-6:before {
+	content: "\e603";
+}
+
